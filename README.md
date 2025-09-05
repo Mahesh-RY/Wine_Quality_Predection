@@ -1,25 +1,60 @@
-Breast Cancer Prediction
+
+🍷 Red Wine Quality Prediction
 📌 Overview
 
-This project focuses on predicting breast cancer using machine learning techniques. The dataset is loaded from Scikit-learn’s breast cancer dataset, and various preprocessing and modeling steps are performed to classify whether a tumor is malignant or benign.
+This project predicts the quality of red wine based on physicochemical features. The dataset is sourced from the UCI Machine Learning Repository and is publicly available on Kaggle. Using machine learning models, the project classifies wine quality into different score levels to aid in quality assessment.
 
-📂 Project Structure
+📂 Dataset
 
-Import Necessary Libraries – Libraries like NumPy, Pandas, Matplotlib, Seaborn, and Scikit-learn are used.
+Source: Red Wine Quality Dataset – Kaggle
 
-Dataset Loading – Breast cancer dataset from sklearn is used.
+This dataset relates to red variants of the Portuguese Vinho Verde wine.
 
-Data Preprocessing – Conversion to DataFrame, exploration, and standardization of features.
+Input Variables (Physicochemical Tests):
 
-Exploratory Data Analysis (EDA) – Insights using descriptive statistics and visualization.
+Fixed acidity
 
-Model Training – Different machine learning models are applied, such as Logistic Regression, KNN, SVM, Decision Trees, and Random Forest.
+Volatile acidity
 
-Model Evaluation – Models are evaluated using accuracy score, confusion matrix, and classification report.
+Citric acid
+
+Residual sugar
+
+Chlorides
+
+Free sulfur dioxide
+
+Total sulfur dioxide
+
+Density
+
+pH
+
+Sulphates
+
+Alcohol
+
+Output Variable (Sensory Data):
+
+Quality (score between 0 and 10)
+
+📊 Project Workflow
+
+Import Necessary Libraries – NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn.
+
+Data Import & Overview – Load dataset, inspect features, check for null values.
+
+Exploratory Data Analysis (EDA) – Visualize distributions, correlations, and feature importance.
+
+Data Preprocessing – Scaling, handling imbalanced classes.
+
+Model Training – Machine learning models (Logistic Regression, Decision Tree, Random Forest, AdaBoost, etc.).
+
+Model Evaluation – Accuracy, precision, recall, F1-score, confusion matrix.
 
 ⚙️ Requirements
 
-Make sure you have the following installed:
+Install the required dependencies:
 
 pip install numpy pandas matplotlib seaborn scikit-learn
 
@@ -27,27 +62,31 @@ pip install numpy pandas matplotlib seaborn scikit-learn
 
 Clone this repository or download the notebook.
 
-Open the Jupyter Notebook:
+Open the notebook:
 
-jupyter notebook "Breast cancer prediction.ipynb"
+jupyter notebook "red wine quality prediction.ipynb"
 
 
-Run the cells step by step to:
+Run the notebook step by step:
 
-Load and preprocess the dataset
+Load and preprocess dataset
 
 Train ML models
 
-Evaluate their performance
+Evaluate model performance
 
-📊 Results
+📈 Results
 
-The project compares different classification algorithms to find the most accurate model for breast cancer prediction. Standardization and proper evaluation ensure better reliability of the results.
+The project compares multiple ML algorithms for wine quality prediction.
+
+Accuracy and evaluation metrics are used to identify the best-performing model.
+
+Random Forest / AdaBoost typically achieve strong performance.
 
 📝 Notes
 
-The dataset is directly available via sklearn.datasets.load_breast_cancer().
+The dataset contains only physicochemical and sensory data (no info on grape type, brand, or price).
 
-You can further tune hyperparameters for better accuracy.
+Class imbalance (most wines have quality between 5–7) can affect accuracy.
 
-Visualization helps in understanding feature distribution and class balance.
+Hyperparameter tuning can further improve performance.
