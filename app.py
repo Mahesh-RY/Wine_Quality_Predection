@@ -3,8 +3,8 @@ import pickle
 import numpy as np
 
 # Load the model and scaler
-adaboost_model = pickle.load(open('models/ada.pkl', 'rb'))
-standard_scaler = pickle.load(open('models/scaler.pkl', 'rb'))
+adaboost_model = pickle.load(open('ada.pkl', 'rb'))
+standard_scaler = pickle.load(open('scaler.pkl', 'rb'))
 
 # Page header
 st.title("🍷 Wine Quality Prediction")
