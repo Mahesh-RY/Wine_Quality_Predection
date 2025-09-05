@@ -1,3 +1,7 @@
+Deployed project url:
+
+
+https://winequalityredectionusingml.streamlit.app/
 
 🍷 Red Wine Quality Prediction
 📌 Overview
@@ -90,3 +94,4 @@ The dataset contains only physicochemical and sensory data (no info on grape typ
 Class imbalance (most wines have quality between 5–7) can affect accuracy.
 
 Hyperparameter tuning can further improve performance.
+
